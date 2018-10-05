@@ -92,9 +92,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Splash" translatesAutoresizingMaskIntoConstraints="NO" id="qPK-td-8Ts">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Splash" translatesAutoresizingMaskIntoConstraints="NO" id="qPK-td-8Ts">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="354"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Citaat" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="l0H-8s-EOn">
                                 <rect key="frame" x="47" y="381" width="294" height="30"/>
@@ -104,23 +103,48 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="0s2-0e-lDA">
-                                <rect key="frame" x="47" y="444" width="294" height="194"/>
+                                <rect key="frame" x="16" y="486" width="334" height="152"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gZS-qh-s9K">
-                                <rect key="frame" x="16" y="28" width="39" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gZS-qh-s9K">
+                                <rect key="frame" x="16" y="36" width="39" height="30"/>
                                 <state key="normal" title="Menu"/>
                                 <connections>
                                     <segue destination="49e-Tb-3d3" kind="show" id="hHW-Dh-mwL"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8tz-O3-H2H">
+                                <rect key="frame" x="262" y="448" width="40" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Share"/>
+                                <connections>
+                                    <action selector="shareDailyBook:" destination="7ye-2R-i70" eventType="touchUpInside" id="L0a-wC-h20"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4si-qn-G9w">
+                                <rect key="frame" x="179" y="448" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Like"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eE9-Ak-0OI">
+                                <rect key="frame" x="63" y="448" width="35" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Read"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="qPK-td-8Ts" firstAttribute="top" secondItem="vAt-bQ-hDg" secondAttribute="top" id="2Na-P0-w5R"/>
+                            <constraint firstItem="YAV-1x-SNC" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="gZS-qh-s9K" secondAttribute="trailing" symbolic="YES" id="9GB-km-kps"/>
+                            <constraint firstItem="gZS-qh-s9K" firstAttribute="top" secondItem="YAV-1x-SNC" secondAttribute="top" constant="16" id="MeJ-AJ-Far"/>
+                            <constraint firstItem="gZS-qh-s9K" firstAttribute="leading" secondItem="YAV-1x-SNC" secondAttribute="leading" constant="16" id="XDC-IL-pdb"/>
+                            <constraint firstItem="qPK-td-8Ts" firstAttribute="leading" secondItem="YAV-1x-SNC" secondAttribute="leading" id="dhh-hN-uQS"/>
+                            <constraint firstItem="qPK-td-8Ts" firstAttribute="trailing" secondItem="YAV-1x-SNC" secondAttribute="trailing" id="iGV-VD-IbT"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="YAV-1x-SNC"/>
                     </view>
                 </viewController>
