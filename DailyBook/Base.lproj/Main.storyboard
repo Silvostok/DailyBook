@@ -49,7 +49,7 @@
                                                     <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                             </button>
-                                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Splash" translatesAutoresizingMaskIntoConstraints="NO" id="bZE-EW-k3E">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Splash" translatesAutoresizingMaskIntoConstraints="NO" id="bZE-EW-k3E">
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="375" id="BC1-O9-pzY"/>
@@ -63,24 +63,27 @@
                                                     <constraint firstAttribute="height" constant="128" id="BhJ-1Z-VIR"/>
                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="128" id="EZd-BU-B7b"/>
                                                 </constraints>
-                                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                                 <fontDescription key="fontDescription" name="TimesNewRomanPS-ItalicMT" family="Times New Roman" pointSize="22"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="7yh-0h-lAy">
                                                 <rect key="frame" x="20" y="840" width="335" height="31"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t9j-cR-GmO">
-                                                        <rect key="frame" x="0.0" y="0.5" width="111.5" height="30"/>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t9j-cR-GmO">
+                                                        <rect key="frame" x="0.0" y="0.0" width="116.5" height="31"/>
                                                         <state key="normal" title="Button"/>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ydM-Cp-Sf0">
-                                                        <rect key="frame" x="119.5" y="0.5" width="112" height="30"/>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ydM-Cp-Sf0">
+                                                        <rect key="frame" x="124.5" y="0.0" width="117" height="31"/>
                                                         <state key="normal" title="Button"/>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Tj-PT-F76">
-                                                        <rect key="frame" x="239.5" y="0.5" width="95.5" height="30"/>
-                                                        <state key="normal" title="Button"/>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Tj-PT-F76">
+                                                        <rect key="frame" x="249.5" y="0.0" width="85.5" height="31"/>
+                                                        <state key="normal" title="Share"/>
+                                                        <connections>
+                                                            <action selector="shareDailyBook:" destination="7ye-2R-i70" eventType="touchUpInside" id="s2s-Cq-12V"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -98,6 +101,13 @@
                                                 <rect key="frame" x="164.5" y="1213" width="46" height="29.5"/>
                                                 <state key="normal" title="Button"/>
                                             </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nb6-1p-YSb">
+                                                <rect key="frame" x="8" y="48" width="46" height="30"/>
+                                                <state key="normal" title="Button"/>
+                                                <connections>
+                                                    <segue destination="eLh-oK-fql" kind="showDetail" id="hrg-ff-jGZ"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" red="1" green="0.78712792720390978" blue="0.46696938930512877" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
@@ -109,6 +119,7 @@
                                             <constraint firstItem="7yh-0h-lAy" firstAttribute="leading" secondItem="7zM-1a-Lo0" secondAttribute="leading" constant="20" id="5bd-4e-ZCA"/>
                                             <constraint firstItem="7yh-0h-lAy" firstAttribute="top" secondItem="QX0-VQ-T03" secondAttribute="bottom" constant="20" id="8qt-Ps-EOG"/>
                                             <constraint firstItem="f7C-p1-9ou" firstAttribute="top" secondItem="bvR-gx-a9R" secondAttribute="bottom" constant="44" id="CRW-3T-wpV"/>
+                                            <constraint firstItem="Nb6-1p-YSb" firstAttribute="top" secondItem="Q5P-s5-51c" secondAttribute="bottom" constant="8" id="D2W-Yt-WJb"/>
                                             <constraint firstAttribute="trailing" secondItem="7yh-0h-lAy" secondAttribute="trailing" constant="20" id="DY4-3v-yCS"/>
                                             <constraint firstItem="qZh-MP-tKN" firstAttribute="leading" secondItem="7zM-1a-Lo0" secondAttribute="leading" constant="20" symbolic="YES" id="G8K-Qu-qTu"/>
                                             <constraint firstAttribute="trailing" secondItem="sYx-pS-Zch" secondAttribute="trailing" constant="20" symbolic="YES" id="H7d-zx-2HT"/>
@@ -130,6 +141,7 @@
                                             <constraint firstAttribute="bottom" secondItem="QX0-VQ-T03" secondAttribute="bottom" constant="464" id="h1M-qs-9vw"/>
                                             <constraint firstAttribute="trailing" secondItem="e0L-v1-POy" secondAttribute="trailing" constant="20" symbolic="YES" id="ikn-8z-M5p"/>
                                             <constraint firstAttribute="trailing" secondItem="bZE-EW-k3E" secondAttribute="trailing" id="kvQ-u2-k3o"/>
+                                            <constraint firstItem="Nb6-1p-YSb" firstAttribute="leading" secondItem="7zM-1a-Lo0" secondAttribute="leading" constant="8" id="p5c-Vw-Ore"/>
                                             <constraint firstItem="QX0-VQ-T03" firstAttribute="top" secondItem="7zM-1a-Lo0" secondAttribute="top" constant="692" id="pLT-qD-HKI"/>
                                             <constraint firstItem="sYx-pS-Zch" firstAttribute="width" secondItem="e0L-v1-POy" secondAttribute="width" id="spX-qo-x77"/>
                                             <constraint firstAttribute="bottom" secondItem="f7C-p1-9ou" secondAttribute="bottom" constant="41.5" id="t0U-pQ-WGH"/>
@@ -165,21 +177,40 @@
             </objects>
             <point key="canvasLocation" x="-788" y="-8.0959520239880067"/>
         </scene>
-        <!--View Controller-->
+        <!--Home View Controller-->
         <scene sceneID="lJj-YJ-g5R">
             <objects>
-                <viewController id="Cvy-R3-R8p" sceneMemberID="viewController">
+                <viewController id="Cvy-R3-R8p" customClass="HomeViewController" customModule="DailyBook" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AUo-YN-NRM">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="5Ex-2a-lY3"/>
                     </view>
-                    <navigationItem key="navigationItem" id="E0V-ee-qDS"/>
+                    <navigationItem key="navigationItem" id="E0V-ee-qDS">
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="XZu-3k-eXI">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="dEZ-UR-pYo">
+                                <rect key="frame" x="16" y="7" width="83" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back"/>
+                            </button>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="4N0-AC-fVh">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Vvh-CP-nhj">
+                                <rect key="frame" x="276" y="7" width="83" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <connections>
+                                <segue destination="hBF-Pb-VR1" kind="unwind" unwindAction="savePlayerDetail:" id="6cg-bK-95U"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dvQ-IH-ggg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="hBF-Pb-VR1" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1053.5999999999999" y="-357.57121439280365"/>
+            <point key="canvasLocation" x="1025" y="-9"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="DuE-Cp-mgp">
@@ -197,7 +228,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FEl-Zv-ZFC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="114.40000000000001" y="-357.57121439280365"/>
+            <point key="canvasLocation" x="183" y="-8"/>
         </scene>
     </scenes>
     <resources>

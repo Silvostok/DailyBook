@@ -16,7 +16,11 @@ class HomeViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func backButton(_ sender: Any) {
+        
+        
+    }
+    
     /*
     // MARK: - Navigation
 
@@ -27,4 +31,17 @@ class HomeViewController: UIViewController {
     }
     */
 
+}
+
+
+extension HomeViewController {
+    
+
+    
+    @IBAction func savePlayerDetail(_ segue: UIStoryboardSegue) {
+        
+        
+        
+        
+    }
 }
