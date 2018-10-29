@@ -1,32 +1,22 @@
 //
-//  HomeViewController.swift
+//  SearchViewController.swift
 //  DailyBook
 //
-//  Created by Miguel Angel Rubio Caballero on 05/10/2018.
+//  Created by Miguel Angel Rubio Caballero on 22/10/2018.
 //  Copyright © 2018 Miguel Angel Rubio Caballero. All rights reserved.
 //
 
 import UIKit
 
-class HomeViewController: UIViewController {
+class SearchViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
         // Do any additional setup after loading the view.
-        
-        navigationController?.navigationBar.prefersLargeTitles = true
-        
-        
     }
     
-    
-    
-    
-    @IBAction func backButton(_ sender: Any) {
-        
-        navigationController?.popViewController(animated: true)
-    }
-    
+
     /*
     // MARK: - Navigation
 
@@ -37,17 +27,4 @@ class HomeViewController: UIViewController {
     }
     */
 
-}
-
-
-extension HomeViewController {
-    
-
-    
-    @IBAction func savePlayerDetail(_ segue: UIStoryboardSegue) {
-        
-        
-        
-        
-    }
 }
