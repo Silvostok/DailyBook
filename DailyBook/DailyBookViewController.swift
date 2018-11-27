@@ -24,7 +24,7 @@ class DailyBookViewController: UIViewController, MFMailComposeViewControllerDele
     }
     
     
-    //send a emal function
+    //send a email function
     func sendEmail() {
         if MFMailComposeViewController.canSendMail() {
             let mail = MFMailComposeViewController()
