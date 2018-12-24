@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -19,6 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         NSLog("Before Sleep");
         sleep(1);
         NSLog("After sleep");
+        FirebaseApp.configure()
         return true
     }
 

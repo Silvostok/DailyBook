@@ -1,0 +1,6 @@
+framework module Pods_DailyBookTests {
+  umbrella header "Pods-DailyBookTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
